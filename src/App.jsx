@@ -5,7 +5,7 @@ import About from './sections/About'
 import Expertise from './components/Expertise'
 import Work from './sections/work'
 import Insights from './sections/insights'
-import Contact from './sections/Contact'
+import Contact from './sections/contact'
 import Footer from './components/footer'
 function App() {
   return (
