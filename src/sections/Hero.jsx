@@ -1,4 +1,5 @@
 import './Hero.css'
+import heroImage from '../assets/hero.png'
 
 function Hero() {
   return (
@@ -38,7 +39,11 @@ function Hero() {
 
         <div className="hero__visual">
           <div className="hero__visual-circle">
-            <div className="hero__initials">KA</div>
+            <img
+              src={heroImage}
+              alt="Kashif Abid"
+              className="hero__image"
+            />
           </div>
         </div>
       </div>
