@@ -1,4 +1,4 @@
-import './Insights.css'
+import './insights.css'
 
 function Insights() {
   return (
