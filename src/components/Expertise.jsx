@@ -1,4 +1,4 @@
-import './Expertise.css'
+import './expertise.css'
 
 function Expertise() {
   return (
