@@ -4,7 +4,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Expertise from './components/Expertise'
 import Work from './sections/work'
-import Insights from './sections/Insights'
+import Insights from './sections/insights'
 import Contact from './sections/Contact'
 import Footer from './components/footer'
 function App() {
