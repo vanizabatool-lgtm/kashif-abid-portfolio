@@ -3,10 +3,15 @@ import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
 import rateLimit from 'express-rate-limit'
+import contactRoutes from './routes/contactRoutes.js'
+import connectDB from './config/database.js'
 
 const app = express()
 
 const PORT = process.env.PORT || 5000
+
+// Database
+await connectDB()
 
 // Security
 app.use(helmet())
@@ -30,6 +35,9 @@ const limiter = rateLimit({
 })
 
 app.use('/api', limiter)
+
+// Routes
+app.use('/api', contactRoutes)
 
 // Health check
 app.get('/api/health', (_req, res) => {

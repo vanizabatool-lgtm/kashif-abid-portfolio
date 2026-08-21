@@ -1,0 +1,85 @@
+.work {
+  padding: 100px 0;
+  background: #f8f8f8;
+}
+
+.work__container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.work__heading {
+  max-width: 750px;
+  margin-bottom: 60px;
+}
+
+.work__eyebrow {
+  margin: 0 0 15px;
+  color: #c62828;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.work h2 {
+  margin: 0;
+  color: #111111;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.1;
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.work__card {
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.work__number {
+  margin: 0 0 25px;
+  color: #c62828;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.work__card h3 {
+  margin: 0 0 15px;
+  color: #111111;
+  font-size: 24px;
+}
+
+.work__card p:last-child {
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    padding: 70px 0;
+  }
+
+  .work__card {
+    padding: 28px;
+  }
+}
